@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" type="imagex/png" href="Imagens/Peludo.png" />
+    <title>Lar Temporário - Proteção Peluda</title>
+    <link rel="stylesheet" href="resgate.css" text="text/css" />
+  </head>
+  <body>
+    <main>
+     <!-- barra de tarefas-->
+     <header>
+      <nav>
+        <ul>
+          <li class="menu">
+            <img id="icon" src="Imagens/icon.svg">
+          </li>
+          <li>
+            <a href="../Home/index.html"
+              ><img
+                src="Imagens/logo.png"
+                id="logo"
+                alt="Logo Proteção Peluda"
+            /></a>
+          </li>
+
+          <div id="caixa">
+            <li class="navegacao"><a href="../sobre_nos - Copia/sobrenus.html">Sobre Nós</a></li>
+            <li class="navegacao"><a href="../adocao/adocao.html">Adoção</a></li>
+            <li class="navegacao"><a href="../resgate/resgate.html">Lar Temporário</a></li>
+            <li class="navegacao"><a href="../perdipet/perdipet.html">Perdi Meu Pet</a></li>
+            <li class="navegacao"><a href="../loja/loja.html">Loja</a></li>
+          </div>
+
+          <li id="login">
+            <a href="../login/login.html">Login</a>
+          </li>
+        </ul>
+      </nav>
+      </header>
+
+      <div class="container">
+      
+        <div class="sessoes_lar_temporarios">
+          <div class="lar_temporario">
+            <div class="titulo_lar_temporario"><i class="fa-solid fa-house" style="color: #840694;"></i>Lar temporário</div>
+              <p class="paragrafo_lar_temporario">Abra as portas do seu coração (e da sua casa) para um hóspede de quatro patas!</p>
+          </div> 
+          <hr>
+
+          <div class="partes_adicionais">
+            <div class="titulos_adicionais">
+              · O que é um Lar Temporário?
+            </div>
+
+            <div class="paragrafos_adicionais">
+              É um lugar onde nossos pets sem lar podem ser acolhidos, com alimentação e todo o cuidado necessário, onde você escolhe o período da estadia do bichinho, e ajuda na adaptação dele em lares, para quando for adotado. Entramos em contato para te conhecer melhor e encontrar um pet que seja compatível com você, para um melhor experiência para ambos!
+            </div>
+            <br>
+            <hr>
+            <div class="partes_adicionais">
+              <div class="titulos_adicionais">
+                · Porque ser um Lar Temporário?
+              </div>
+  
+              <div class="paragrafos_adicionais">
+                Você tem a experiência de como é ter um animal de estimação, sem compromisso a longo prazo, além da gratidão e carinho do pet, e apoia uma causa nobre, ajudando a nossa ONG a dar uma melhor qualidade de vida aos nossos bichinhos que esperam por um lar definitivo!
+              </div>
+              <br>
+              <hr>
+              <div class="partes_adicionais">
+                <div class="titulos_adicionais">
+                  · Quem pode participar?
+                </div>
+    
+                <div class="paragrafos_adicionais">
+                  Pessoas maiores de 18 anos, que possuam disponibilidade e espaço adequado, que morem em um lugar onde possa haver animais e que tenham recursos e carinho para acolher o pet.
+                </div>
+                <br>
+                <hr>
+          </div>
+
+          <div class="cadastro_lar">
+            <div class="titulo_cadastro"> · Cadastre-se como Lar Temporário</div>
+              <p class="paragrafo_cadastro_lar">Pronto para ser um <strong>herói temporário?</strong> Ofereça um lar cheio de carinho enquanto nossos amigos
+                peludos esperam por uma família definitiva!</p>
+          </div>
+
+        </div>   
+        <br>
+        <hr>
+        <form class="formulario_lar">
+          <fieldset>
+          <legend>Dados Pessoais</legend>
+            <section id="teste33">         
+              <div>
+                <label>Nome completo:<strong class="verm">*</strong></label>
+                <input type="text" name="nome" maxlength="50" size="50" required placeholder="Seu nome completo aqui..."/>
+              </div>
+              
+              <div>
+                <label>Idade:<strong class="verm">*</strong></label></label>
+                <input type="text" min="0" max="3" required placeholder="Maior de idade"/>
+              </div>
+              <div>
+                <label>E-mail:<strong class="verm">*</strong></label></label>
+                <input type="email" name="e-mail" maxlength="50" size="50" required placeholder="Seu melhor e-mail aqui..."/>
+              </div>
+              <div>
+                <label>Celular:<strong class="verm">*</strong></label></label>
+                <input type="tel" min="0" max="11" required placeholder="(00) 00000-0000"/>
+              </div>
+            </section>
+
+            <hr>
+          <br>
+          <legend>Endereço</legend>
+          <section id="teste33">
+            <div>
+              <label>Rua/Avenida:<strong class="verm">*</strong></label></label>
+              <input type="text" name="nome" maxlength="100" size="100" required placeholder="Seu endereço aqui"/>
+            </div>
+            <div>
+              <label>Número:<strong class="verm">*</strong></label></label>
+              <input type="text" min="0" max="10" required placeholder="Casa/bloco"/>
+            </div>
+            <div>
+              <label>Complemento:<strong class="verm">*</strong></label></label>
+              <input type="text" name="nome" maxlength="50" size="0" required placeholder="se aplicável"/>
+            </div>
+            <div>
+              <label>Bairro:<strong class="verm">*</strong></label></label>
+              <input type="text" name="nome" maxlength="100" size="100" required placeholder="Seu bairro aqui..."/>
+            </div>
+            <div>
+              <label>Cidade:<strong class="verm">*</strong></label></label>
+              <input type="text" name="nome" maxlength="100" size="100" required placeholder="Seu cidade aqui..."/>
+            </div>
+            <div>
+              <label>Estado:<strong class="verm">*</strong></label></label>
+              <input type="text" name="nome" maxlength="100" size="100" required placeholder="Seu estado aqui..."/>
+            </div>
+            <div>
+              <label>CPF:<strong class="verm">*</strong></label></label>
+              <input type="text" name="nome" maxlength="100" size="50" required placeholder="(00000-000)"/>
+            </div>
+          </section>
+
+          <hr>
+          <br>
+          <legend>Informações sobre a Residência:</legend>
+          <section id="teste33">
+            <div>
+              <label>Tipo de moradia:<strong class="verm">*</strong></label></label>
+              <input type="text" name="nome" maxlength="100" size="50" required placeholder="(casa, apartamento, etc.)"/>
+            </div>
+            <div>
+              <label>Tamanho do espaço disponível para o animal:<strong class="verm">*</strong></label></label>
+              <input type="text" name="nome" maxlength="100" size="50" required placeholder=" Ex: Apartamento com 60m²..."/>
+            </div>
+            <div>
+              <label>Existência de áreas externas:<strong class="verm">*</strong></label></label>
+              <input type="text" name="nome" maxlength="100" size="50" required placeholder=" (quintal, varanda, etc.)"/>
+            </div>
+            <div>
+              <label>Segurança:<strong class="verm">*</strong></label></label>
+              <input type="text" name="nome" maxlength="100" size="50" required placeholder=" (portões, telas nas janelas, etc.)"/>
+            </div>
+            <div>
+              <label>Presença de outros animais na casa:<strong class="verm">*</strong></label></label>
+              <input type="text" name="nome" maxlength="100" size="50" required placeholder=" (tipo, quantidade)"/>
+            </div>
+          </section>
+
+          <hr>
+
+          <legend>Preferências de Adoção Temporária:</legend>
+          <section id="teste33">
+            <div>
+              <label>Tipo de animal desejado:</label>
+              <input type="radio" name="animal"/>Cachorro
+              <input type="radio" name="animal"/>Gato
+              <input type="radio" name="animal"/>Coelho
+              <input type="radio" name="animal"/>Tartaruga
+            </div>
+            <div>
+              <label>Tamanho do animal:</label>
+              <input type="radio" name="Tamanho"/>Pequeno
+              <input type="radio" name="Tamanho"/>Médio
+              <input type="radio" name="Tamanho"/>Grande
+              <input type="radio" name="Tamanho"/>Qualquer um
+            </div>
+            <div id="sanimal">
+              <label>Sexo do animal:</label>
+              <input type="radio" name="Sexo"/>Macho
+              <input type="radio" name="Sexo"/>Fêmea
+              <input type="radio" name="Sexo"/>Indiferente
+            </div>
+            <div>
+              <label>Aceitação de animais com necessidades especiais:<strong class="verm">*</strong></label></label>
+              <input type="radio" name="especiais" value="sim" />Sim
+              <input type="radio" name="especiais" value="nao" />Não
+            </div>
+            <div>
+              <label>Capacidade para lidar com animais filhotes, adultos ou idosos:<strong class="verm">*</strong></label></label>
+              <input type="radio" name="Capacidade" value="sim" />Sim
+              <input type="radio" name="Capacidade" value="nao" />Não
+            </div>
+          </section>
+
+          <hr>
+
+          <legend>Disponibilidade:</legend>
+          <section id="teste33">
+            <div>
+              <label>Tempo disponível para ser um lar temporário:<strong class="verm">*</strong></label></label>
+              <input type="text" name="nome" maxlength="100" size="50" required placeholder="(dias, semanas, meses)"/>
+            </div>
+            <div>
+              <label>Horários em que estará em casa:<strong class="verm">*</strong></label></label>
+              <input type="text" name="nome" maxlength="100" size="50" required placeholder="Ex. 00h00 ás 15h00 "/>
+            </div>
+            <div>
+              <label>Experiência anterior com cuidados de animais:<strong class="verm">*</strong></label></label>
+              <input type="radio" name="resp" value="sim" />Sim
+              <input type="radio" name="resp" value="nao" />Não
+            </div>
+          </section>
+
+          <hr>
+
+          <legend>Outras Informações:</legend>
+          <label>· Por que deseja ser um herói temporário?<strong class="verm">*</strong></label></label>
+          <br />
+          <textarea placeholder="Comente aqui..." width="10" height="40"></textarea>
+          <br /><br />
+
+          <label>· Possibilidade de ficar com mais de um animal, se necessário:<strong class="verm">*</strong></label></label>
+          <input type="radio" name="mais" value="sim" />Sim
+          <input type="radio" name="mais" value="nao" />Não
+          <br>
+          <br>
+          <label>· Comentários adicionais</label>
+          <br />
+          <textarea placeholder="Comente aqui..." width="10" height="40"></textarea>
+          <br /><br />
+
+
+          <div class="area_compromisso">
+            <h3 class="condicoes_compromisso">Condições e Compromissos:</h3>
+            <p class="todas_condicoes">· Concordância em fornecer alimentação e cuidados básicos</p>
+            <p class="todas_condicoes">· Compromisso em levar o animal ao veterinário se necessário</p>
+            <p class="todas_condicoes">· Disponibilidade para permitir visitas de possíveis adotantes</p>
+  
+  
+            <h3 class="condicoes_compromisso">Confirmação:</h3>`
+            <div id="declaracao">
+              <input type="checkbox" name="opcao2" value="declaro" required placeholder />
+              <div id="declaro">Declaro de que as informações fornecidas são verdadeiras</div>
+            </div>
+            <div id="consdigital">
+              <input type="checkbox" name="opcao2" value="declaro1" required placeholder />
+              <div id="consentimento">Consentimento digital</div>
+           </div>
+          </fieldset>
+          <div id="final">
+            <div id="enviar">
+                <button class="enviar_form">
+                    <p>Enviar Formulário</p>
+                </button>
+            </div>
+          <p id="p1">Você receberá um e-mail de confirmação</p>
+          <a href="../sobre_nos - Copia/sobrenus.html"><p>Política de Privacidade</p></a>   <!--Levar para o Sobre Nós-->
+        </div>
+        </form>
+
+      </div>
+
+      </div>
+
+
+    </main>
+
+    
+      <!--Rodapé-->
+      <footer>
+        <div id="footer_content">
+          <ul class="footer_list1">
+            <li>
+              <h3 class="footer_titulos">Sobre a Proteção Peluda</h3>
+            </li>
+            <li>
+              <a href="#" class="footer_link">Quem somos</a>
+            </li>
+            <li>
+              <a href="#" class="footer_link">Nossas parceiras</a>
+            </li>
+            <li>
+              <a href="#" class="footer_link">Trabalhe Conosco</a>
+            </li>
+            <li>
+              <a href="#" class="footer_link">Transparência com você</a>
+            </li>
+            <li>
+              <a href="#" class="footer_link">Pesquisar animais</a>
+            </li>
+            <li>
+              <a href="#" class="footer_link">Eventos</a>
+            </li>
+          </ul>
+
+          <ul class="footer_list2">
+            <li>
+              <h3 class="footer_titulos">Dúvidas</h3>
+            </li>
+            <li>
+              <a href="#" class="footer_link">Atendimento</a>
+            </li>
+            <li>
+              <a href="#" class="footer_link">Perguntas Frequentes</a>
+            </li>
+            <li>
+              <a href="#" class="footer_link">Como adotar?</a>
+            </li>
+            <li>
+              <a href="#" class="footer_link">Como doar?</a>
+            </li>
+          </ul>
+
+
+          <div id="redes_sociais">
+            <h3 class="footer_titulos_redes">Redes Sociais</h3> 
+            <div id="footer_social_media">
+                <a href="#" class="footer_link" id="instagram">
+                <i class="fa-brands fa-instagram" style="color: #ffffff;" ></i>
+                </a>
+
+                <a href="#" class="footer_link" id="whatsapp">
+                <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>
+                </a>
+
+                <a href="#" class="footer_link" id="youtube">
+                <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
+                </a>
+
+                <a href="#" class="footer_link" id="facebook">
+                <i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i>
+                </a>
+            </div>
+
+            <div class="meios_pagamento">
+              <p id="titulo_pagamento">Meios de Pagamento</p>
+              <img id="cartoes" src="https://static.petz.com.br/images/exp-facelift/mastercard-logo.png" alt="Bandeira mastercard">
+              <img id="cartoes" src="https://static.petz.com.br/images/exp-facelift/visa-logo.png" alt="Bandeira visa">
+              <img id="cartoes" src="https://static.petz.com.br/images/exp-facelift/hypercard-logo.png" alt="Hypercard">
+              <img id="cartoes" src="https://static.petz.com.br/images/exp-facelift/elo-logo.png" alt="Bandeira elo">
+              <img src="https://static.petz.com.br/images/exp-facelift/barcode-icon.png" alt="Código de barras">
+              <img src="https://static.petz.com.br/images/exp-facelift/pix-transparent.svg" alt="Pix">
+
+        </div>
+        <div id="entrega">
+          <p id="titulo_entrega">Formas de Entrega<i class="fa-solid fa-truck" id="car"></i></p>
+
+          <p class="ent">Entregas Padrão: Prazo de 3 a 5 dias úteis</p>
+          <p class="ent">Entrega Expressa: Prazo de 1 a 2 dias úteis</p>
+        </div>
+        </div>
+     
+        </div>
+      </footer>
+
+      <div id="footer_logo">
+        <a href="#" id="footer_protecao_peluda">
+          <img src="Imagens/logo_footer.png" />
+          <p>Todos os direitos reservados</p>
+        </a>
+      
+  </body>
+</html>

@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" type="imagex/png" href="Imagens/Peludo.png" />
+    <title>Perdi meu Pet - Proteção Peluda</title>
+
+    <link rel="stylesheet" href="petdipet.css" type="text/css">
+</head>
+<body>
+    <main>
+         <!--banner-->
+        <div id="banner">
+                    <div id="banner_esquerda">
+                        <h1 id="texto_banner">Perdi meu Pet <div id="emoji"><img src="Imagens/rosto-triste-em-quadrado-arredondado 1.png"></div></h1>
+                    </div>
+
+                    <div id="banner_direita">
+                        <p>
+                            Perder um animal de
+                            estimação é uma experiência
+                            angustiante, mas você não está
+                            sozinho. Estamos aqui para
+                            ajudar a reunir você com seu
+                            amigo peludo o mais rápido
+                            possível. Nesta página, você
+                            pode reportar um animal
+                            perdido e ver animais encontrados 
+                            recentemente.
+                        </p>
+                    </div>
+                <img src="Imagens/Union.png" alt="Gato laranja perdido em um local escuro">               
+        </div>
+
+
+        <!--Barra-->
+        <header>
+            <nav>
+              <ul>
+                    <img id="icon" src="Imagens/icon.svg" alt="">
+                <li>
+                  <a href="../home/index.html"
+                    ><img
+                      src="Imagens/logo.png"
+                      id="logo"
+                      alt="Logo Proteção Peluda"
+                  /></a>
+                </li>
+    
+                <div id="caixa">
+                    <li class="navegacao"><a href="../sobre_nos - Copia/sobrenus.html">Sobre Nós</a></li>
+                    <li class="navegacao"><a href="../adocao/adocao.html">Adoção</a></li>
+                    <li class="navegacao"><a href="../resgate/resgate.html">Lar Temporário</a></li>
+                    <li class="navegacao"><a href="../perdipet/perdipet.html">Perdi Meu Pet</a></li>
+                    <li class="navegacao"><a href="../loja/loja.html">Loja</a></li>
+                </div>
+    
+                <li id="login">
+                    <a href="../login/login.html">Login</a>
+                </li>
+              </ul>
+            </nav>
+        </header>
+
+            <!--Formulario-->
+          <div id="formulario_topo">
+            <img src="Imagens/Union2.png">
+
+                <h1 id="texto_form">Formulário <br> <p>Reportar um Animal Perdido</p></h1>
+
+            <div id="formulario_corpo">
+               <form>
+                <fieldset>
+                    <section id="superior">
+                        <div>
+                            <label>Nome do Pet:<strong>*</strong></label>
+                            <input type="text" name="nome" maxlength="50" size="50" required placeholder="Nome completo aqui...">
+                        </div>
+
+                        <div>
+                            <label>Espécie:<strong>*</strong></label>
+                            <select name="opcao">
+                                <option>Cachorro</option>
+                                <option>Gato</option>
+                                <option>Tartaruga</option>            
+                                <option>Coelho</option>                       
+                                <option>Passaro</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label>Raça:<strong>*</strong></label>
+                            <input type="text" name="raca" maxlength="50" size="50" required placeholder="...">
+                        </div>
+
+                        <div>
+                            <label>Idade:<strong>*</strong></label>
+                            <input type="number" name="idade" maxlength="50" size="50" required placeholder="Quantos anos e meses?">
+                        </div>
+                    </section>
+                    <section id="inferior">
+                        <div id="bb">
+                            <label>Descrição Física:<strong>*</strong></label>
+                            <br /><br>
+                            <textarea placeholder="(Tamanho, cor, características marcantes)" width="10" height="40"></textarea>
+                        </div>
+
+                        <div id="bb">
+                            <label>Último Local Visto:<strong>*</strong></label>
+                            <br /><br>
+                            <textarea placeholder="(Endereço ou ponto de referência)" width="10" height="40"></textarea>
+                        </div>
+
+                        <div id="bb">
+                            <label>Observações Adicionais:<strong>*</strong></label>
+                            <br /><br>
+                            <textarea placeholder="Por exemplo, se o animal é amigável ou tem necessidades especiais" width="10" height="40"></textarea>
+                        </div>
+
+                        <div id="whatsapp">
+                            <div>
+                                <label>Data e Hora da Última Aparição:<strong>*</strong></label>
+                                <br /><br>
+                                <input id="data_hora" type="text" name="raca" maxlength="50" size="50" required placeholder="Ex: 24/07/2024 - 13h15">
+                            </div>
+                            <div>
+                                <label>Envie uma foto do pet no nosso WhatsApp:</label>
+                                <br /><br>
+                                <div id="whatsapp2"><div><img src="Imagens/1384023.png"></div><p>(11) 98765-4321  - Atendimento 24horas</p></div>
+                            </div>
+                        </div>
+                    </section>
+                    <hr>
+                    <section id="conclusao">
+                        <legend>Observações Adicionais:</legend>
+                        <aside>
+                            <div>
+                                <label>Nome Completo:<strong>*</strong></label>
+                                <input type="text" name="pessoa" maxlength="50" size="50" required placeholder="Seu nome completo aqui...">
+                            </div>
+
+                            <div>
+                                <label>Celular:<strong>*</strong></label>
+                                <input type="tel" min="0" max="11" required placeholder="(00) 00000-0000"/>
+                            </div>
+
+                            <div>
+                                <label>E-mail:<strong>*</strong></label>
+                                <input type="email" name="e-mail" maxlength="50" size="50" required placeholder="Seu e-mail aqui..."/>
+                            </div>
+
+                            <div id="final">
+                                <div id="enviar">
+                                    <button class="enviar_form">
+                                        <p>Enviar Formulário</p>
+                                    </button>
+                                </div>
+                            </div>   
+                        </aside>
+                    </section>
+                </fieldset>
+               </form>
+            </div>
+        </div>
+        <!--animais perdidos-->
+        <section id="animais_perdidos">
+            <div id="titulo1"><h1>Animais Perdidos</h1></div>
+            <p id="p1">
+                Confira abaixo a lista de animais que estão perdidos na sua região. Se você avistar algum deles, entre 
+                em contato conosco para que possamos ajudar a reunir o pet com sua família.
+            </p>
+            <div id="cards">
+                <div id="lua">
+                    <div id="coberto">
+                        <div><h2>Lua (2 anos)</h2><p>Desaparecida há 4 dias </p></div>
+                        <div id="coberto2">
+                            <div><h5>Mensagem da dona:</h5><p>Mariana Silva </p></div><br>
+                            Minha Lua sumiu há quatro
+                            dias enquanto passeávamos, e desde então, não a vi mais.
+                            Ela foi vista ontem no Jardim
+                            Ângela, mas ainda não a
+                            encontramos. Por favor, se
+                            alguém tiver notícias dela,
+                            entre em contato. Estou
+                            muito preocupada.   
+                        </div>
+                    </div>
+                    <div><img src="Imagens/lua.png"></div>
+                    <div id="subida"><h2>Lua (2 anos)</h2> <br> <p id="pe">Desaparecida há 4 dias <br> Vista pela última vez há 1 dia no Jardim Ângela</p> </div>
+                    <br>
+                    <div id="carac">
+                        <div id="cachorro">Cachorro</div>
+                        <div id="femea">Fêmea</div>
+                        <div id="adulto">Adulto</div>
+                        <div id="grande">Grande</div>
+                        <div id="branco">Branco</div>
+                        <div id="multicolorido">Multicolorido</div>
+                    </div>
+                </div>
+                
+                <div id="lua">
+                    <div id="coberto">
+                        <div><h2>Atena (3 anos)</h2><p>Desaparecida há 7 dias </p></div>
+                        <div id="coberto2">
+                            <div><h5>Mensagem do dono:</h5><p>Fernando Souza </p></div><br>
+                            Atena, minha gatinha linda e dócil, sumiu há sete dias,
+                            e desde então, não tenho nenhuma notícia dela. Já fiz cartazes,
+                            campanhas nas redes sociais, mas nada. Estou desesperado, por favor,
+                            se alguém a viu ou souber onde ela está, entre em contato.
+                        </div>
+                    </div>
+                    <div><img src="Imagens/atena.png" alt="Gata com a pelagem branca e marrom claro com manchas escuras, de olhos amarelos"></div>
+                    <div><h2 id="subida">Atena (3 anos)</h2> <br> <p id="pe">Desaparecida há 7 dias <br> Sem informações</p> </div>
+                    <br>
+                    <div id="carac">
+                        <div id="gato">Gato</div>
+                        <div id="femea">Fêmea</div>
+                        <div id="adulto">Adulto</div>
+                        <div id="medio">Médio</div>
+                        <div id="docil">Dócil</div>
+                        <div id="multicolorido">Multicolorido</div>
+                    </div>
+                </div>
+                <div id="lua">
+                    <div id="coberto">
+                        <div><h2>Brutos (4 anos)</h2><p>Desaparecida há 6 dias </p></div>
+                        <div id="coberto2">
+                            <div><h5>Mensagem do dono:</h5><p>Jonathan Pereira</p></div><br>
+                            Meu Brutos desapareceu há sete dias e estou completamente desesperado!
+                            Ele pode ser um pouco bruto, mas é meu amigo e estou preocupado que
+                            ele possa estar assustando ou até machucando alguém. 
+                        </div>
+                    </div>
+                    <div><img src="Imagens/ronald.png" alt="Cachorro com pelagem caramelo claro e olhos escuros"></div>
+                    <div><h2 id="subida">Brutos (4 anos)</h2> <br> <p id="pe">Desaparecida há 6 dias <br> Visto pela última vez no Ibirapuera</p> </div>
+                    <br>
+                    <div id="carac">
+                        <div id="cachorro">Cachorro</div>
+                        <div id="macho">Macho</div>
+                        <div id="adulto">Adulto</div>
+                        <div id="medio">Médio</div>
+                        <div id="branco">Branco</div>
+                        <div id="calmo">Calmo</div>
+                    </div>
+                </div>
+                <div id="lua">
+                    <div id="coberto">
+                        <div><h2>Ronald (7 anos)</h2><p>Desaparecida há 1 dias </p></div>
+                        <div id="coberto2">
+                            <div><h5>Mensagem do dono:</h5><p>Bartholomeu Von</p></div><br>
+                            Meu querido Ronald sumiu ontem e estou em pânico!
+                            Como ele vai sobreviver sem suas refeições gourmet
+                            e seu banho semanal com produtos importados? Ele tem
+                            até um estilista exclusivo! Por favor, tragam meu bebê de volta,
+                            e ofereço uma boa recompensa!   
+                        </div>
+                    </div>
+                    <div><img src="Imagens/brutus.png" alt="Cachorro caramelo, com pelo branco próximo as patas"></div>
+                    <div><h2 id="subida">Ronald (7 anos)</h2> <br> <p id="pe">Desaparecida há 1 dias <br> Visto pela última vez na garagem da residência</p> </div>
+                    <br>
+                    <div id="carac">
+                        <div id="cachorro">Cachorro</div>
+                        <div id="macho">Macho</div>
+                        <div id="adulto">Adulto</div>
+                        <div id="medio">Médio</div>
+                        <div id="dourado">Dourado</div>
+                        <div id="irritado">Irritado</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+                    <!--animais encontrados-->
+        <section id="animais_encontrados">
+            <div id="titulo2"><h1>Animais Encontrados</h1></div>
+            <p id="p2">
+                Encontrou um animal perdido? Veja abaixo a lista de animais que foram encontrados e estão esperando ser
+                reunidos com suas famílias.
+            </p>
+            <div id="bichos">
+                <div id="marrom">
+                    <div><img src="Imagens/bethoven.png" alt="Cachorro de pelagem lisa, com olhos e pelos marrom"></div>
+                    <div>Bethoven<br><p>4 anos</p></div>
+                </div>
+
+                <div id="amarelo">
+                    <div><img src="Imagens/poseidon.png" alt="Gato filhote cinza malhado,com olhos escuros"></div>
+                    <div>Poseidon<br><p>2 meses</p></div>
+                </div>
+
+                <div id="marrom">
+                    <div><img src="Imagens/peter.png" alt="Cachorro filhote, com pelos brancos e machinhas marrons nas oelhas e proximidades"></div>
+                    <div>Peter<br><p>3 meses</p></div>
+                </div>
+
+                <div id="amarelo">
+                    <div><img src="Imagens/hercules.png" alt="Gato laranja e branco"></div>
+                    <div>Hércules<br><p>3 anos</p></div>
+                </div> 
+
+
+
+                <div id="amarelo">
+                    <div><img src="Imagens/milly.png" alt="Gata preta com olhos verdes e pelagem branca próximo ao pescoço"></div>
+                    <div>Milly<br><p>2 meses</p></div>
+                </div> 
+
+                <div id="marrom">
+                    <div><img src="Imagens/pipoca.png" alt="Cachorra sorridente da cor caramelo claro, olhos escuros e pelos brancos na região do focinho e pescoço"></div>
+                    <div>Pipoca<br><p>2 anos</p></div>
+                </div>
+
+                <div id="vermelho">
+                    <div><img src="Imagens/punny.png" alt="Coelho cinza, com pelos escuros próximo aos olhos"></div>
+                    <div>Punny<br><p>5 meses</p></div>
+                </div>
+
+                <div id="amarelo">
+                    <div><img src="Imagens/floquinho.png" alt="Gato branco de olhos cinzas"></div>
+                    <div>Floquinho<br><p>3 meses</p></div>
+                </div> 
+
+
+                <div id="marrom">
+                    <div><img src="Imagens/carmen.png" alt="Cachorrinha vira-lata marrom, com olhos escuros"></div>
+                    <div>Carmen<br><p>2 anos</p></div>
+                </div>
+
+                <div id="amarelo">
+                    <div><img src="Imagens/luna.png" alt="Gata com pelagem em tons creme"></div>
+                    <div>Luna<br><p>1 ano</p></div>
+                </div> 
+
+                <div id="marrom">
+                    <div><img src="Imagens/eleven.png" alt="Cachorrinha pequena com pelos lisos e pretos, sorridente"></div>
+                    <div>Eleven<br><p>3 anos</p></div>
+                </div>
+
+                <div id="vermelho">
+                    <div><img src="Imagens/paodelo.png" alt="Coelha com pelos creme e olhos escuros"></div>
+                    <div>Pão de Ló<br><p>7 meses</p></div>
+                </div>
+
+
+                <div id="verde">
+                    <div><img src="Imagens/donatela.png" alt="Tartaruga verde com listras amarelas"></div>
+                    <div>Leonardo<br><p>33 dias</p></div>
+                </div>
+
+                <div id="amarelo">
+                    <div><img src="Imagens/simba.png" alt="Gato alaranjado em um por do sol"></div>
+                    <div>Simba<br><p>3 anos</p></div>
+                </div>
+
+                <div id="marrom">
+                    <div><img src="Imagens/tobias.png" alt="Cachorrinho com pelos claros e manchinhas caramelo"></div>
+                    <div>Tobias<br><p>8 anos</p></div>
+                </div>
+
+                <div id="amarelo">
+                    <div><img src="Imagens/mia.png" alt="Gatinha branca com manchinhas marrom"></div>
+                    <div>Mia<br><p>3 anos</p></div>
+                </div>
+
+
+                <div id="marrom">
+                    <div><img src="Imagens/lucky.png" alt="Cachorrinho com pelagem creme e orelhas caramelo"></div>
+                    <div>Lucky<br><p>5 anos</p></div>
+                </div>
+
+                <div id="marrom">
+                    <div><img src="Imagens/rufus.png" alt="Cachorro branco com manchinhas e orelhas marrons"></div>
+                    <div>Rufus<br><p>2 anos</p></div>
+                </div>
+
+                <div id="marrom">
+                    <div><img src="Imagens/francisco.png" alt="Cachorro preto com pelagem lisa e olhos pretos"></div>
+                    <div>Francisco<br><p>4 anos</p></div>
+                </div>
+
+                <div id="amarelo">
+                    <div><img src="Imagens/edi.png" alt="Gato branco com orelhas e manchinhas no corpo pretas"></div>
+                    <div>Edi<br><p>3 anos</p></div>
+                </div>
+
+
+                <div id="amarelo">
+                    <div><img src="Imagens/tigrinha.png" alt="Gatinha filhote branca e laranja malhado"></div>
+                    <div>Tigrinha<br><p>8 anos</p></div>
+                </div>
+
+                <div id="marrom">
+                    <div><img src="Imagens/hela.png" alt="Cachorro com pelagem preta e branca"></div>
+                    <div>Hela<br><p>2 anos</p></div>
+                </div>
+
+                <div id="amarelo">
+                    <div><img src="Imagens/baldurs.png" alt="Gato preto de olhos claros"></div>
+                    <div>Baldur<br><p>6 anos</p></div>
+                </div>
+
+                <div id="marrom">
+                    <div><img src="Imagens/hulk.png" alt="Cachorro com pelos caramelos e preto, olhos escuros"></div>
+                    <div>Hulk<br><p>4 anos</p></div>
+                </div>
+
+
+                <div id="marrom">
+                    <div><img src="Imagens/amora.png" alt="Cachorra marrom com pelos brancos no rosto e peitoral"></div>
+                    <div>Amora<br><p>1 anos</p></div>
+                </div>
+
+                <div id="amarelo">
+                    <div><img src="Imagens/leo.png" alt="Gato malhado cinza"></div>
+                    <div>Leo<br><p>8 anos</p></div>
+                </div>
+
+                <div id="amarelo">
+                    <div><img src="Imagens/tom.png" alt="Gato malhado cinza em um tom amarelado"></div>
+                    <div>Tom<br><p>12 anos</p></div>
+                </div>
+
+                <div id="amarelo">
+                    <div><img src="Imagens/bento.png" alt="Gatinho malhado caramelo acinzentado"></div>
+                    <div>Bento<br><p>2 anos</p></div>
+                </div>
+
+
+                <div id="verde">
+                    <div><img src="Imagens/tortuguita.png" alt="Tartaruga pequena de casco mesclado"></div>
+                    <div>Rafael<br><p>12 anos</p></div>
+                </div>
+
+                <div id="marrom">
+                    <div><img src="Imagens/magna.png" alt="Cachorro grande de cor creme e pelagem lisa"></div>
+                    <div>Magna<br><p>2 anos</p></div>
+                </div>
+
+                <div id="amarelo">
+                    <div><img src="Imagens/paçoca.png" alt="Gatinho marrom com pelagem branca no focinho e região do pescoço"></div>
+                    <div>Paçoca<br><p>5 anos</p></div>
+                </div>
+
+                <div id="cinza">
+                    <div id="titulo3"><h1>+53</h1></div>
+                    <p id="p3">Outros<br>Bichinhos</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="ajuda">
+            <div>Para sua segurança, ao combinar a entrega do seu PET com a pessoa que o encontrou, sempre escolha locais públicos ou as ONGs credenciadas, caso não tenha certeza que seja seu PET entre em contato conosco! 
+            </div>
+            <a href="#">Entre Em Contato</a>
+        </section>
+
+        <div id="design1">
+            <div id="design"><img src="Imagens/Peludo esq.png"></div>
+            <div id="design"><img src="Imagens/Peludo dir.png"></div>
+        </div>
+
+                     <!--Rodapé-->
+      <footer>
+        <div id="footer_content">
+          <ul class="footer_list1">
+            <li>
+              <h3 class="footer_titulos">Sobre a Proteção Peluda</h3>
+            </li>
+            <li>
+              <a href="#" class="footer_link">Quem somos</a>
+            </li>
+            <li>
+              <a href="#" class="footer_link">Nossas parceiras</a>
+            </li>
+            <li>
+              <a href="#" class="footer_link">Trabalhe Conosco</a>
+            </li>
+            <li>
+              <a href="#" class="footer_link">Transparência com você</a>
+            </li>
+            <li>
+              <a href="#" class="footer_link">Pesquisar animais</a>
+            </li>
+            <li>
+              <a href="#" class="footer_link">Eventos</a>
+            </li>
+          </ul>
+
+          <ul class="footer_list2">
+            <li>
+              <h3 class="footer_titulos">Dúvidas</h3>
+            </li>
+            <li>
+              <a href="#" class="footer_link">Atendimento</a>
+            </li>
+            <li>
+              <a href="#" class="footer_link">Perguntas Frequentes</a>
+            </li>
+            <li>
+              <a href="#" class="footer_link">Como adotar?</a>
+            </li>
+            <li>
+              <a href="#" class="footer_link">Como doar?</a>
+            </li>
+          </ul>
+
+
+          <div id="redes_sociais">
+            <h3 class="footer_titulos_redes">Redes Sociais</h3> 
+            <div id="footer_social_media">
+                <a href="#" class="footer_link" id="instagram">
+                <i class="fa-brands fa-instagram" style="color: #ffffff;" ></i>
+                </a>
+
+                <a href="#" class="footer_link" id="whatsapp">
+                <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>
+                </a>
+
+                <a href="#" class="footer_link" id="youtube">
+                <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
+                </a>
+
+                <a href="#" class="footer_link" id="facebook">
+                <i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i>
+                </a>
+            </div>
+            
+            <div class="meios_pagamento">
+                <p id="titulo_pagamento">Meios de Pagamento</p>
+                <img id="cartoes" src="https://static.petz.com.br/images/exp-facelift/mastercard-logo.png" alt="Bandeira mastercard">
+                <img id="cartoes" src="https://static.petz.com.br/images/exp-facelift/visa-logo.png" alt="Bandeira visa">
+                <img id="cartoes" src="https://static.petz.com.br/images/exp-facelift/hypercard-logo.png" alt="Hypercard">
+                <img id="cartoes" src="https://static.petz.com.br/images/exp-facelift/elo-logo.png" alt="Bandeira elo">
+                <img src="https://static.petz.com.br/images/exp-facelift/barcode-icon.png" alt="Código de barras">
+                <img src="https://static.petz.com.br/images/exp-facelift/pix-transparent.svg" alt="Pix">
+                <div id="entrega">
+                    <p id="titulo_entrega">Formas de Entrega<i class="fa-solid fa-truck" id="car"></i></p>
+          
+                    <p class="ent">Entregas Padrão: Prazo de 3 a 5 dias úteis</p>
+                    <p class="ent">Entrega Expressa: Prazo de 1 a 2 dias úteis</p>
+                  </div>
+              </div>
+
+        </div>
+
+      </footer>
+
+      <div id="footer_logo">
+        <a href="#" id="footer_protecao_peluda">
+          <img src="Imagens/logo_footer.png" />
+          <p>Todos os direitos reservados</p>
+        </a>
+
+    </main>
+</body>
+
+</html>

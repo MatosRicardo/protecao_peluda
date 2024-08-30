@@ -1,0 +1,1198 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-family: "Rubik", sans-serif;
+  }
+  body{
+    background: #390040;
+  }
+  
+  main {
+    width: 100%;
+    height: auto;
+  }
+  /* barra de pesquisa */
+  header {
+    position: sticky; /* manter barra de pesquisa na tela */
+    top: 0;
+    border-radius: 0px 0px 24px 24px;
+    width: 80%;
+    height: 70px;
+    background-color: white;
+    margin: auto;
+    font-size: 20px;
+    z-index: 2;
+    background-color: #F9EDFF;
+    box-shadow:rgba(0, 0, 0, 0.445) 0px 3px 8px;
+    font-weight: 500;
+  }
+  
+  .menu{
+    display: none;
+  }
+  
+  #caixa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+  }
+  
+  li.navegacao {
+    top: 25px;
+    margin: 0px 12px 0px 12px;
+  }
+  
+  .navegacao a:hover{
+    color: #840694;
+  }
+  
+  .navegacao a:active {
+    background-color: #840694;
+    color: white;
+  }
+  
+  .navegacao a {
+    padding: 15px;
+    border-radius: 15px;
+  }
+  
+  #logo {
+    left: 20px;
+    width: 102px;
+    height: 42px;
+    top: 15px;
+  }
+  
+  #login {
+    top: 15px;
+    padding-left: 40px;
+    padding-top: 10px;
+    width: 100px;
+    margin: 0px 15px 0px 1px;
+    border-radius: 12px;
+    background-color: #840694;
+    color: #f9edff;
+    transition-duration: 0.5s;
+    a{
+      color: white;
+      text-align: center;
+      font-weight: 700;
+    }
+    a:hover{
+      color: black;
+    }
+  }
+  
+  #login:hover {
+    background-color: #f4b625;
+    color: #341c12;
+    transition: 0.5;
+  }
+
+  /* Banner */
+
+  #banner img, #emoji img, #formulario_total img, #whatsapp2 img{
+    width: 100%;
+  }
+  #banner{
+    position: absolute;
+    width: 90%;
+    height: auto;
+    left: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #banner_esquerda{
+    position: absolute;
+    z-index: 1;
+    left: 5%;
+    width: 80%;
+    bottom: 45%;
+  }
+  #texto_banner{
+    color: #F4B625;
+    width: 60%;
+    z-index: 1;
+    font-size: 58px;
+    font-weight: 800;
+    letter-spacing: 2.9px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #emoji{
+  margin-left: 15px;
+  z-index: 1;
+  float: left;
+  }
+  #banner_direita{
+    left: 70%;
+    position: absolute;
+    border-radius: 42px;
+    width: 25%;
+    height: auto;
+    background-color: #F4B625;
+    z-index: 1;
+    text-align: center;
+  }
+  #banner_direita p{
+    margin: 5% 7% 5% 7%;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 178%;  
+    letter-spacing: 0.7px;
+    text-align: center;
+  }
+
+  /* formulario */
+
+  #formulario_topo{
+    width: 90%;
+    height: auto;
+    margin-top: 35%;
+    left: 5%;
+    z-index: 1;
+    float: left;
+  }
+  #formulario_topo img{
+    width: 100%;
+  }
+  #texto_form{
+    position: absolute;
+    z-index: 2;
+    top: 5%;
+    left: 5%;
+  }
+  #texto_form p{
+    font-size: 20px;
+  }
+  #formulario_corpo{
+    position: absolute;
+    top: 16.3%;
+    border-radius: 42px;
+    width: 100%;
+    height: auto;
+    background-color: #F4B625;
+  }
+  #superior{
+    left: 4%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #superior div{
+    margin: 10px 10px 10px 15px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+  }
+  label,legend{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 149.986%; /* 35.997px */
+    letter-spacing: 1.2px;
+  }
+  input,select{
+    width: 50%;
+    padding: 13px;
+    margin: 15px;
+    border-radius: 12px;
+    background-color: #D9D9D9;
+  }
+  strong{
+    color: red;
+  }
+  #inferior{
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  #inferior div{
+    width: 40%;  
+  }
+  #whatsapp{
+    width: 100%;
+
+  }
+  #whatsapp div{
+    width: 100%;
+  }
+  #whatsapp2{
+    width: 90%;
+    background-color: #367A00;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:20px;
+    cursor: pointer;
+  }
+  #whatsapp2 p{
+    color: white;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 149.986%; /* 35.997px */
+    letter-spacing: 1.2px;
+  }
+  #whatsapp2 div{
+    width: 60px;
+  }
+
+  textarea{
+    margin: 0px 40px 50px 0px;
+    width: 100%;
+    border-radius: 12px;
+    background-color: #D9D9D9;
+    height: 200px;
+  }
+  #data_hora{
+    right: 2%;
+  }
+
+  hr{
+    width: 90%;
+    left: 5%;
+    height: 4px;
+    background-color: #000000;
+    opacity: 20%;
+  }
+  /*observações adicionais*/
+
+  #conclusao{
+    display: flex;
+    flex-direction: column;
+  } 
+  #conclusao div{
+    display: flex; 
+    align-items: center;
+    justify-content: left;
+  }
+  aside{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    left: 5%;
+    margin-bottom: 2%;
+  }
+  legend{
+    margin: 3% 0% 1% 5%;
+    font-weight: 800;
+  }
+  #enviar{
+    margin-top: 20px;
+  }
+  #enviar button{
+    background-color: #840694;
+    padding: 30px 30px 30px 30px;
+    width: 100%;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+
+  #enviar button:hover {
+    background-color: #653623;
+    margin-top: 10px;
+  }
+  button p{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 149.986%; /* 35.997px */
+    letter-spacing: 1.2px;
+  }
+
+  /* Titulos */
+
+  #titulo1,#titulo2{
+    width: 75%;
+    left: 5%;
+    top: 60px;
+  }
+  #titulo1 h1,#titulo2 h1{
+    color: #26547C;
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 149.986%;
+    letter-spacing: 3.2px;
+  }
+  #p1,#p2{
+    top: 50px;
+    left: 5%;
+    color: #19354F;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 149.986%; /* 29.997px */
+    letter-spacing: 1px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.20);
+    width: 90%;
+  }
+
+  /* animais perdidos */
+  #animais_perdidos{
+    clear: left;
+    top: 500px;
+    margin-top: 1500px;
+    left: 5%;
+    background-color: #F9EDFF;
+    width: 90%;
+    border-radius: 45px;
+  }
+  #coberto{
+    width: 100%;
+    position: absolute;
+    height: 68%;
+    z-index: 1;
+    border-radius: 20px;
+    background-color: #001E39;
+  }
+  #coberto2{
+    margin-top: 30%;
+    width: 90%;
+    height: 75%;
+    left: 5%;
+    background-color: #001221;
+    font-size: 15px;
+    border-radius: 12px;
+    color: white;
+    div{
+      h5{
+        color: white;
+      }
+      margin: 5px 0px 10px 5px;
+    }
+  }
+  #coberto{
+    opacity: 0;
+  }
+  #lua:hover{
+    #coberto{
+      opacity: 1;
+    }
+    #pe{
+      opacity: 0;
+    }
+  }
+  #lua h2{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 149.986%;
+    letter-spacing: 1px;
+    color: #F9EDFF;
+    left: 5%;
+  }
+  #lua{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #001E39;
+    border-radius: 24px;
+    margin-top: 8%;
+    margin-bottom: 10%;
+  }
+  #lua img{
+    width: 90%;
+    margin: 5%;
+    border-radius: 24px;
+  }
+  #cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #lua p{
+    position: absolute;
+    color: #F4B625;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 149.986%; /* 20.998px */
+    letter-spacing: 0.7px;
+    left: 5%;
+  }
+  #carac{
+    left: 4%;
+    height: auto;
+    margin-top: 45%;
+    width: 92%;
+    border-radius: 12px;
+    background-color: #001221;
+    margin-bottom: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #carac div{
+    width: 40%;
+    border-radius: 12px;
+    text-align: center;
+    padding: 3px 0px 3px 0px;
+    margin: 5px 0px 5px 5px;
+  }
+  #gato{
+    background-color: #F4B625;
+    color: white;
+  }
+  #macho{
+    background-color: #0168C2;
+    color: white;
+  }
+  #filhote,#adulto{
+    background-color: #6BFFB8;
+    color: black;
+  }
+  #medio,#pequeno,#grande{
+    background-color: #505050;
+    color: white;
+  }
+  #branco{
+    background-color: white;
+    color: #000;
+  }
+  #docil{
+    background-color: #FF98C9;
+    color: #000;
+  }
+  #brincalhao{
+    background-color: #00B707;
+    color: white;
+  }
+  #femea{
+    background-color: #C20175;
+    color:#F9EDFF;
+  }
+  #cachorro,#marromcor{
+    background-color: #653623;
+    color: white;
+  }
+  #coelho{
+    background-color: #C20101;
+    color: white;
+  }
+  #agitado{
+    background-color: #0011AC;
+    color: white;
+  }
+  #tartaruga{
+    background-color: #1F7700;
+    color: white;
+  }
+  #irritado{
+    background-color: #8E0000;
+    color: white;
+  }
+  #preto{
+    background-color: #000;
+    color: white;
+    border: 2px white solid;
+  }
+  #cinza{
+    color: white;
+    background-color: #292929;
+  }
+  #dourado{
+    background-color: #FF4D00;
+    color: white;
+  }
+  #calmo{
+    background-color: #75BDFF;
+    color: #000;
+  }
+  #protetor{
+    background-color: #00743C;
+    color: white;
+  }
+  #verdecor{
+    background-color: #1F7700;
+    color: white;
+  }
+  #multicolorido{
+    background: linear-gradient(90deg, #131014 0%, #292929 33.33%, #653623 66.67%, #FF4C00 100%);
+    color: white;
+  }
+
+  /* animais encontrados */
+  #animais_encontrados{
+    position: relative;
+    margin-top: 35%;
+    left: 5%;
+    width: 90%;
+    background-color: #F9EDFF;
+    border-radius: 45px;
+  }
+  #titulo2 h1{
+    color: #840694;
+  }
+  #p2{
+    color: #390040;
+    margin-bottom: 6%;
+  }
+  #bichos{
+    left: 5%;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #bichos img{
+    width: 80%;
+  }
+  #marrom div,#amarelo div,#vermelho div,#verde div{
+    left: 15%;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 149.986%;
+    letter-spacing: 1px;
+  }
+  #marrom p,#amarelo p,#vermelho p,#verde p{
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+    line-height: 149.986%; /* 20.998px */
+    letter-spacing: 0.7px;  
+  }
+  #marrom,#amarelo,#vermelho,#verde,#cinza{
+    width: 21%;
+    border-radius: 21px;
+    margin-bottom: 30px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  #marrom{
+    background-color: #653623;
+  }
+  #amarelo{
+    background-color: #F4B625;
+  }
+  #vermelho{
+    background-color: #C20101;
+  }
+  #verde{
+    background-color: #1F7700;
+  }
+  #titulo3 h1{
+    color: #390040;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 149.986%; /* 71.993px */
+    letter-spacing: -1.92px;
+  }
+  #p3{
+    color:#390040;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 149.986%; /* 29.997px */
+    letter-spacing: -0.8px;
+  }
+  #cinza{
+    background: rgba(117, 117, 117, 0.20);
+    display: flex;
+    justify-content:  center;
+  }
+
+  /* ajuda*/
+  #ajuda{
+    top: 100px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    div{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 149.986%; /* 29.997px */
+    letter-spacing: 1px;
+    margin-bottom: 5%;
+    }
+    a{
+      text-align: center;
+      margin: auto;
+      width: 20%;
+      padding: 15px;
+      background-color:#840694;
+      color: #F9EDFF;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 149.986%; /* 29.997px */
+      letter-spacing: 1px;
+      border-radius: 12px;
+    }
+  }
+
+  textarea {
+    padding: 5px;
+  }
+
+  #ajuda a:hover{
+    background-color: #f4b625;
+    color: black;
+  }
+
+
+  /* rodape */
+footer{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  background-color: #F4B625;
+}
+
+#footer_content{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  text-align: left;
+}
+
+.footer_list1,.footer_list2, #redes_sociais{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-left: 120px;
+}
+
+.footer_list1, .footer_list2{
+  gap: 20px;
+}
+
+footer ul{
+  justify-content: unset;
+}
+
+.footer_titulos_redes{
+  margin-left: 8vh;
+}
+
+.footer_link{
+  color:#fff;
+  opacity: 75%;
+  font-size: 18px;
+  transition: all 0.4s;
+  text-align: left;
+}
+
+.footer_list1, .footer_list2, .footer_link:hover{
+  color: rgb(49, 38, 13);
+}
+
+.footer_titulos{
+  left: 0;
+  margin-top: 44px;
+}
+
+#redes_sociais{
+  margin-left: 30px;
+}
+
+#redes_sociais .footer_titulos_redes{
+  margin-top: 44px;
+  color: #fff;
+  font-size: 22px;
+}
+
+#footer_social_media .footer_link{
+  display:inline;
+}
+
+#footer_social_media .footer_link i{
+  font-size: 40px;
+  padding: 20px;
+  margin-top: 11px;
+}
+
+#footer_content .footer_titulos {
+  color: #fff;
+  font-size: 22px;
+}
+
+#footer_logo{
+  z-index: -1;
+  bottom: 3px;
+  justify-content:center;
+  display: flex;
+  background-color: #F4B625;
+  text-align: center;
+  padding-top: 50px;
+}
+
+#footer_logo img{
+  width: 163.19px;
+  margin-bottom: 9px;
+}
+
+#footer_logo p{
+  color: #fff;
+  opacity: 80%;
+  align-self: center;
+  font-size: 16px;
+  margin-bottom: 21px;
+}
+#design img{
+  width: 100%;
+}
+#design1{
+  z-index: -1;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#design{
+  width: 30%;
+}
+#icon{
+  display: none;
+}
+
+.meios_pagamento{
+  margin-top: 1%;
+  margin-left: -15px;
+  width: 100%;
+  height: 10vh;
+  text-align: center;
+  background-color: #F4B625;
+}
+
+#titulo_pagamento{
+  padding-bottom: 4%;
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+  font-weight: 600;
+}
+#titulo_entrega {
+  padding-top: 1%;
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.ent {
+  color: white;
+  padding-top: 1%;
+  text-align: center;
+}
+
+#car {
+  color: white;
+}
+@media only screen and (max-width:520px){
+
+  #icon {
+    display: inline;
+    height: 60%;
+    margin-top: 13px;
+    margin-left: 10px;
+  }
+  #login{
+    width: 70px;
+    padding: 0;
+    padding-left: 13px;
+    height: 30px;
+  }
+  #emoji img{
+    width: 30%;
+  }
+  #banner{
+    top: 72px;
+  }
+  #texto_banner{
+    width: 100%;
+    bottom: 25px;
+    font-size: 15px;
+  }
+  #banner_direita{
+    width: 29%;
+    border-radius: 10px;
+  }
+  #banner_direita p{
+    font-size: 5px;
+    line-height: 178%; /* 8.9px */
+    letter-spacing: 0.25px;
+  }
+  #caixa{
+    display: none;
+  }
+  header{
+    width: 100%;
+  } 
+  #texto_form{
+    font-size: 20px;
+    left: 0%;
+    p{
+      font-size: 11px;
+    }
+  }
+  
+  label{
+    font-size: 20px;
+  }
+  #inferior div{
+    width: 90%;
+  }
+  #whatsapp div{
+    width: 100%;
+  }
+  #whatsapp2{
+    img{
+      left: 60%;
+      width: 30px;
+    }
+    p{
+      width: 100%;
+      white-space: nowrap;
+      font-size: 10px;
+    }
+    margin-bottom: 20px;
+  }
+  #titulo1 h1,#titulo2 h1{
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  #p1,#p2{
+    font-size: 12px;
+  }
+  #animais_perdidos{
+    top: 800px;
+  }
+  #cards{
+    margin-top: 15%;
+    flex-wrap: wrap;
+    #lua{
+      width: 80%;
+    #subida{
+      margin-top: 50%;
+    }
+    }
+  }
+  #carac{
+    margin-top: 70%;
+  }
+  #animais_encontrados{
+    top: 800px;
+
+  }
+  #bichos{
+    margin-top: 30%;
+    div{
+      width: 40%;
+      left: 0px;
+      font-size: 12px;
+      p{
+        font-size: 14px;
+      }
+    }
+  }
+  #titulo3{
+    h1{
+      font-size: 20px;
+    }
+    p{
+      font-size: 14px;
+    }
+  }
+  #ajuda{
+    margin-top: 800px;
+    a{
+      width: 50%;
+    }
+  }
+  #redes_sociais{
+    display: none;
+  }
+}
+@media only screen and (min-width:521px){
+@media only screen and (max-width:700px){
+  #icon {
+    display: inline;
+    height: 60%;
+    margin-top: 13px;
+    margin-left: 10px;
+  }
+  #login{
+    width: 70px;
+    padding: 0;
+    padding-left: 13px;
+    height: 30px;
+  }
+  #emoji img{
+    width: 30%;
+  }
+  #banner{
+    top: 72px;
+  }
+  #texto_banner{
+    width: 100%;
+    bottom: 25px;
+    font-size: 15px;
+  }
+  #banner_direita{
+    width: 29%;
+    border-radius: 10px;
+  }
+  #banner_direita p{
+    font-size: 5px;
+    line-height: 178%; /* 8.9px */
+    letter-spacing: 0.25px;
+  }
+  #caixa{
+    display: none;
+  }
+  header{
+    width: 100%;
+  } 
+  #texto_form{
+    font-size: 20px;
+    left: 0%;
+    p{
+      font-size: 11px;
+    }
+  }
+  label{
+    font-size: 20px;
+  }
+  #inferior div{
+    width: 90%;
+  }
+  #whatsapp div{
+    width: 100%;
+  }
+  #whatsapp2{
+    img{
+      left: 60%;
+      width: 30px;
+    }
+    p{
+      width: 100%;
+      white-space: nowrap;
+      font-size: 10px;
+    }
+    margin-bottom: 20px;
+  }
+  #titulo1 h1,#titulo2 h1{
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  #p1,#p2{
+    font-size: 12px;
+  }
+  #animais_perdidos{
+    top: 800px;
+  }
+  #cards{
+    margin-top: 15%;
+    flex-wrap: wrap;
+    #lua{
+      width: 40%;
+    }
+  }
+  #carac{
+    margin-top: 70%;
+  }
+  #animais_encontrados{
+    top: 800px;
+  }
+  #bichos{
+    margin-top: 30%;
+    div{
+      width: 40%;
+      left: 0px;
+      font-size: 12px;
+      p{
+        font-size: 14px;
+      }
+    }
+  }
+  #titulo3{
+    h1{
+      font-size: 20px;
+    }
+    p{
+      font-size: 14px;
+    }
+  }
+  #ajuda{
+    margin-top: 800px;
+    a{
+      width: 50%;
+    }
+  }
+  #redes_sociais{
+    display: none;
+  }
+}
+}
+@media only screen and (min-width:701px){
+  @media only screen and (max-width:1050px){
+    #icon {
+    display: inline;
+    height: 60%;
+    margin-top: 13px;
+    margin-left: 10px;
+  }
+  #login{
+    width: 70px;
+    padding: 0;
+    padding-left: 13px;
+    height: 30px;
+  }
+  #emoji img{
+    width: 50%;
+  }
+  #banner{
+    top: 72px;
+  }
+  #caixa{
+    display: none;
+  }
+  #texto_banner{
+    width: 100%;
+    bottom: 25px;
+    font-size: 30px;
+  }
+  #banner_direita{
+    width: 29%;
+    border-radius: 10px;
+  }
+  #banner_direita p{
+    font-size: 10px;
+    line-height: 178%; /* 8.9px */
+    letter-spacing: 0.25px;
+  }
+  header{
+    width: 95%;
+  } 
+  #texto_form{
+    font-size: 35px;
+    left: 7%;
+    p{
+      font-size: 15px;
+    }
+  }
+  label{
+    font-size: 25px;
+  }
+  #inferior div{
+    width: 90%;
+  }
+  #whatsapp div{
+    width: 100%;
+  }
+  #whatsapp2{
+    img{
+      left: 60%;
+      width: 50px;
+    }
+    p{
+      width: 100%;
+      white-space: nowrap;
+      font-size: 20px;
+    }
+    margin-bottom: 20px;
+  }
+  #titulo1 h1,#titulo2 h1{
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  #p1,#p2{
+    font-size: 20px;
+  }
+  #animais_perdidos{
+    top: 1000px;
+  }
+  #cards{
+    margin-top: 10%;
+    flex-wrap: wrap;
+    #lua{
+      width: 40%;
+    }
+    div img{
+      margin-bottom:55%;
+    }
+  }
+  #carac{
+    margin-top: 30%;
+  }
+  #animais_encontrados{
+    top: 800px;
+  }
+  #bichos{
+    margin-top: 15%;
+    div{
+      width: 40%;
+      left: 0px;
+      font-size: 25px;
+      p{
+        font-size: 20px;
+      }
+    }
+  }
+  #titulo3{
+    h1{
+      font-size: 20px;
+    }
+    p{
+      font-size: 14px;
+    }
+  }
+  #ajuda{
+    margin-top: 110%;
+  }
+}
+}
+@media only screen and (min-width:1051px){
+  @media only screen and (max-width:1500px){
+  #texto_banner{
+    width: 100%;
+    bottom: 30px;
+    font-size: 45px;
+  }
+  #banner_direita{
+    width: 29%;
+    top: 20%;
+  }
+  #banner_direita p{
+    font-size: 15px;
+    line-height: 178%; /* 8.9px */
+    letter-spacing: 0.25px;
+  }
+  #lua{
+    width: 20%;
+  }
+  #animais_encontrados{
+    top: 200px;
+  }
+  #ajuda{
+    top: 300px;
+  }
+  }
+}
